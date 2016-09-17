@@ -29,11 +29,11 @@
     <br><br><br>
     <center><h1>Route Analytics</h1>
     <p>Know more about the situation of your current supply routes</p></center>
-
+    <br><br><br>
     <div id="most-affected" class="container">
       <h3>Most Affected Routes</h3>
       <div class="divider"></div>
-      <div class="long-card">
+      <div class="long-card-centered">
         <div class="card-img-container">
           <img class="card-img" src="images/landingbg.jpg">
         </div>
@@ -60,11 +60,19 @@
               </tr>
             </tbody>
           </table>
+          <div class="rating-div">
+            <center>
+              <h2 class="orange">43</h2>
+              <h5>Route Rating</h5>
+            </center>
+          </div>
+          <br><br>
           <a class="card-link" href="card-details.php">Go to Route Details</a>
         </div>
       </div>
     </div>
-
+    
+    <br><br><br>
     <div id="top-performing" class="container">
       <h3>Top Performing Routes</h3>
       <div class="divider"></div>
@@ -95,9 +103,57 @@
               </tr>
             </tbody>
           </table>
+          <div class="rating-div">
+            <center>
+              <h2 class="green">91</h2>
+              <h5>Route Rating</h5>
+            </center>
+          </div>
+          <br><br>
           <a class="card-link" href="card-details.php">Go to Route Details</a>
         </div>
+        </div>
+
+        <div class="long-card">
+        <div class="card-img-container">
+          <img class="card-img" src="images/sample2.jpg">
+        </div>
+        <div class="card-text-container">
+          <p class="card-title">Busan Delivery Route</p>
+          <div class="divider"></div>
+          <table class="table table-striped">
+            <thead>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Times Rerouted (per month):</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Failed Deliveries:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Delayed Deliveries:</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="rating-div">
+            <center>
+              <h2 class="green">87</h2>
+              <h5>Route Rating</h5>
+            </center>
+          </div>
+          <br><br>
+          <a class="card-link" href="card-details.php">Go to Route Details</a>
+        </div>
+      </div>
     </div>
+
+
 
 
 
