@@ -14,7 +14,7 @@
       <img class="brand" src="images/sample1.jpg">
       <ul id="nav-menu" class="list-inline">
         <li><a href="dashboard.php">Home</a></li>
-        <li><a href="#">Live Routes</a></li>
+        <li><a href="live-routes.php">Live Routes</a></li>
         <li><a href="#">Sensurge Analytics</a></li>
       </ul>
     </nav>

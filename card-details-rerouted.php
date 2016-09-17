@@ -80,7 +80,7 @@
 			<img class="brand" src="images/sample1.jpg">
 			<ul id="nav-menu" class="list-inline">
 				<li><a href="dashboard.php">Home</a></li>
-				<li><a href="live-routes.php">Live Routes</a></li>
+				<li><a href="">Live Routes</a></li>
 				<li><a href="sensurge-analytics.php">Sensurge Analytics</a></li>
 			</ul>
 		</nav>
@@ -119,12 +119,12 @@
         directionsService.route({
           origin: {'placeId': origin_place_id},
           destination: {'placeId': destination_place_id},
-					// waypoints: [
-					// 	{
-					// 		'location': '14.664547, 121.021186',
-					// 		'stopover': true
-					// 	}
-					// ],
+					waypoints: [
+						{
+							'location': '14.664547, 121.021186',
+							'stopover': false
+						}
+					],
           travelMode: travel_mode
         }, function(response, status) {
           if (status === 'OK') {

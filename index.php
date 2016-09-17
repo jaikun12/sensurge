@@ -11,7 +11,7 @@
 		</video>
 		<center>
 			<div id="intro" class="container">
-				<img src="images/eduboostlogowhite.png" class="logo">
+				<img src="images/sensurge-logo.png" class="logo">
 				<h1>Know when disaster strikes. We got your back.</h1>
 				<a href="dashboard.php" class="button-1">LOGIN</a>
 			</div>

@@ -58,3 +58,8 @@ video#bgvid {
     background:white;
     color:rgba(39,113,163,0.7);
 }
+
+.logo{
+    height:500px;
+    width:500px;
+}
