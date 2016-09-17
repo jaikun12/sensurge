@@ -1,0 +1,41 @@
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 70%;
+        width:70%;
+        margin:0 auto;
+      }
+      #floating-panel{
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #floating-panel {
+        background-color: #fff;
+        padding: 5px;
+        z-index: 5;
+      }
+      #floating-panel button{
+        margin:10px;
+        background:none;
+        border:solid rgb(39,113,140) 1px;
+        border-radius:10px;
+        -o-transition:.2s;
+        -ms-transition:.2s;
+        -moz-transition:.2s;
+        -webkit-transition:.2s;
+      }
+
+      #floating-panel button:hover{
+        background:white;
+        border:solid white 1px;
+        border-radius:10px;
+        color:rgb(39,113,140);
+      }
