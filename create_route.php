@@ -3,6 +3,7 @@
   <head>
     <title>Sensurge</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/create-route.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <meta charset="utf-8">
@@ -61,20 +62,28 @@
    <nav>
       <img class="brand" src="images/sample1.jpg">
       <ul id="nav-menu" class="list-inline">
-        <li><a href="">Home</a></li>
-        <li><a href="">Live Routes</a></li>
-        <li><a href="">Sensurge Analytics</a></li>
+        <li><a href="dashboard.php">Home</a></li>
+        <li><a href="#">Live Routes</a></li>
+        <li><a href="sensurge-analytics.php">Sensurge Analytics</a></li>
       </ul>
     </nav>
 
     <form action="php/add_route.php" method="post">
       <p><input type="text" name="origin_id" id="origin_place_id" value="" hidden></p>
       <p><input type="text" name="destination_id" id="destination_place_id" value="" hidden></p>
-      <p>Name route: <input type="text" name="name" value=""></p>
-      <p>Details: <textarea name="details" rows="8" cols="40"></textarea></p>
 
-
-
+      <div class="create-form">
+      <center>
+      <h1>Create new route</h1>
+      <br><br>
+      <p>Name route</p>
+      <p><input type="text" name="name" value="" class="form-control"></p>
+       
+      <p>Details</p>
+      <p><textarea name="details" rows="8" cols="40" class="textarea"></textarea></p>
+      </center>
+      </div>
+      
       <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
 
       <input id="destination-input" class="controls" type="text" name="destination" placeholder="Enter a destination location">
@@ -82,9 +91,11 @@
       <center>
       <div id="map"></div>
       </center>
-
-      <input type="submit" name="save" value="Save">
-
+      <br><br>
+      <center>
+      <input type="submit" name="save" value="Save" class="button-1">
+      </center>
+      <br><br>
     </form>
 
 
