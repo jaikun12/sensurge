@@ -57,9 +57,9 @@
     </style>
   </head>
   <body>
-    <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
+    <input id="origin-input" class="controls" type="text" name="origin" placeholder="Enter an origin location">
 
-    <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
+    <input id="destination-input" class="controls" type="text" name="destination" placeholder="Enter a destination location">
 
     <div id="map"></div>
 
@@ -113,6 +113,9 @@
           // the other place ID
           origin_place_id = place.place_id;
           route(origin_place_id, destination_place_id, travel_mode, directionsService, directionsDisplay);
+          // console.log('origin: '+ origin_place_id);
+          // console.log('dest: '+destination_place_id);
+          // console.log(travel_mode);
         });
 
         destination_autocomplete.addListener('place_changed', function() {
