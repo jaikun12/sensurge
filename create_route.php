@@ -67,13 +67,25 @@
       </ul>
     </nav>
 
-    <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
+    <form action="php/add_route.php" method="post">
+      <p><input type="text" name="origin_id" id="origin_place_id" value="" hidden></p>
+      <p><input type="text" name="destination_id" id="destination_place_id" value="" hidden></p>
+      <p>Name route: <input type="text" name="name" value=""></p>
+      <p>Details: <textarea name="details" rows="8" cols="40"></textarea></p>
 
-    <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
 
-    <center>
-    <div id="map"></div>
-    </center>
+
+      <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
+
+      <input id="destination-input" class="controls" type="text" name="destination" placeholder="Enter a destination location">
+
+      <center>
+      <div id="map"></div>
+      </center>
+
+      <input type="submit" name="save" value="Save">
+
+    </form>
 
 
 
@@ -126,11 +138,16 @@
           // If the place has a geometry, store its place ID and route if we have
           // the other place ID
           origin_place_id = place.place_id;
+          document.getElementById('origin_place_id').value = origin_place_id;
           route(origin_place_id, destination_place_id, travel_mode, directionsService, directionsDisplay);
+          // console.log('origin: '+ origin_place_id);
+          // console.log('dest: '+destination_place_id);
+          // console.log(travel_mode);
         });
 
         destination_autocomplete.addListener('place_changed', function() {
           var place = destination_autocomplete.getPlace();
+          console.log(place);
           if (!place.geometry) {
             window.alert("Autocomplete's returned place contains no geometry");
             return;
@@ -140,6 +157,7 @@
           // If the place has a geometry, store its place ID and route if we have
           // the other place ID
           destination_place_id = place.place_id;
+          document.getElementById('destination_place_id').value = destination_place_id;
           route(origin_place_id, destination_place_id, travel_mode, directionsService, directionsDisplay);
         });
 
