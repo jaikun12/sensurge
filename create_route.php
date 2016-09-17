@@ -114,7 +114,7 @@
             map.setZoom(17);
           }
         }
-
+        console.log(origin_input);
         origin_autocomplete.addListener('place_changed', function() {
           var place = origin_autocomplete.getPlace();
           if (!place.geometry) {
