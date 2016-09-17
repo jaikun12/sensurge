@@ -9,6 +9,11 @@
 	<body>
 		<nav>
 			<img class="brand" src="images/sample1.jpg">
+			<ul id="nav-menu" class="list-inline">
+				<li><a href="">Home</a></li>
+				<li><a href="">Live Routes</a></li>
+				<li><a href="">Sensurge Analytics</a></li>
+			</ul>
 		</nav>
 		
 		<div class="side-nav">
@@ -16,7 +21,7 @@
 			<ul id="side-nav-items" class="list-group">
 				<a href="#"><li class="list-group-item">General</li></a>
 				<a href="dashboard-history.php"><li class="list-group-item">History</li></a>
-				<a href=""><li class="list-group-item">Live Routes</li></a>
+				<!-- <a href=""><li class="list-group-item">Live Routes</li></a> -->
 				<a href=""><li class="list-group-item">Re-routed Routes</li></a>
 				<a href=""><li class="list-group-item">Disabled Routes</li></a>
 			</ul>

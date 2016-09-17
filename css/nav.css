@@ -11,3 +11,17 @@ nav{
 	height:50px;
 	margin-left:15px;
 }
+
+#nav-menu{
+	margin-top:20px;
+}
+
+#nav-menu li{
+	margin-left:30px;
+}
+
+#nav-menu li a{
+	color:white;
+	text-decoration:none;
+
+}

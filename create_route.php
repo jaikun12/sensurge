@@ -3,15 +3,16 @@
   <head>
     <title>Sensurge</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/create-route.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <meta charset="utf-8">
     <style>
       html, body {
-        height: 100%;
         margin: 0;
         padding: 0;
       }
       #map {
-        height: 100%;
+        height:500px;
       }
       .controls {
         margin-top: 10px;
@@ -57,11 +58,24 @@
     </style>
   </head>
   <body>
-    <input id="origin-input" class="controls" type="text" name="origin" placeholder="Enter an origin location">
+   <nav>
+      <img class="brand" src="images/sample1.jpg">
+      <ul id="nav-menu" class="list-inline">
+        <li><a href="">Home</a></li>
+        <li><a href="">Live Routes</a></li>
+        <li><a href="">Sensurge Analytics</a></li>
+      </ul>
+    </nav>
+
+    <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
 
     <input id="destination-input" class="controls" type="text" name="destination" placeholder="Enter a destination location">
 
+    <center>
     <div id="map"></div>
+    </center>
+
+
 
     <script>
       // This example requires the Places library. Include the libraries=places
