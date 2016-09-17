@@ -68,7 +68,7 @@
 					<p class="card-title">Create a new Route</p>
 					<div class="divider"></div>
 					<p class="card-sched"></p>
-					<a class="card-link" href="card-details.php">Create Here</a>
+					<a class="card-link" href="create_route.php">Create Here</a>
 				</div>
 			</div>
 		</div>
