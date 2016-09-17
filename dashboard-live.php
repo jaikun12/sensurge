@@ -23,25 +23,11 @@
 		</div>
 
 		<div class="main-content">
-			<h2>History</h2>
-			<table class="table table-striped">
-				<thead>
-					<th>Route</th>
-					<th>Schedule</th>
-					<th>Status</th>
-					<th>Rerouted?</th>
-					<th>Completion Date</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Trinoma Delivery Route</td>
-						<td>Monday 3pm</td>
-						<td><span class="green">Completed</span></td>
-						<td>No</td>
-						<td>Monday 5pm</td>
-					</tr>
-				</tbody>
-			</table>
+			<h2>Live Routes</h2>
+			<div class="long-card">
+
+			</div>
+			
 		</div>
 
 		<script src="bootstrap.min.js"></script>
