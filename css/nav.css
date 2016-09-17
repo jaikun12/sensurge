@@ -1,0 +1,13 @@
+nav{
+	width:100%;
+	height:75px;
+	background:rgb(39,113,140);
+	padding:5px;
+}
+
+.brand{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-left:15px;
+}

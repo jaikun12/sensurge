@@ -1,0 +1,95 @@
+*{
+	box-sizing:border-box;
+	font-family:'Open Sans';
+}
+
+html,body{
+	margin:0;
+	padding:0px;
+	overflow:hidden;
+}
+
+h2{
+	margin:0;
+}
+h3{
+	color:white;
+	margin:0;
+	margin-bottom:20px;
+}
+
+.side-nav{
+	width:20vw;
+	border:solid black 1px;
+	height:100vh;
+	background:#3C3C3C;
+	padding:20px;
+	float:left;
+}
+
+
+#side-nav-items a .list-group-item{
+	background:none;
+	border:none;
+	color:white;
+	border-bottom:solid #3C3C3C 1px;
+	border-radius:0px;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+#side-nav-items a .list-group-item:hover{
+	border-bottom:solid white 1px;
+}
+
+.main-content{
+	padding:30px;
+	float:right;
+	overflow:auto;
+	width:80vw;
+	max-height:90vh;
+}
+
+.card{
+	height:300px;
+	max-height:300px;
+	width:300px;
+	max-width:300px;
+	border:solid #E4E4E4 1px;
+	float:left;
+	margin:30px;
+}
+
+.card-title{
+	font-size:2.6vh;
+
+}
+
+.card-img-container{
+	height:60%;
+	width:100%;
+}
+
+.card-img{
+	width:100%;
+	height:100%;
+}
+
+.card-text-container{
+	padding:10px;
+}
+
+.card-link{
+	float:right;
+}
+
+.card-sched{
+	margin-top:5px;
+}
+
+.divider{
+	width:100%;
+	border-bottom:solid #D4D4D4 1px;
+}
