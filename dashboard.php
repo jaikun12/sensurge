@@ -1,7 +1,11 @@
+<?php
+	include('php/dbconfig.php');
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/dashboard.css">
 		<link type="text/css" rel="stylesheet" href="css/nav.css">
@@ -15,7 +19,7 @@
 				<li><a href="">Sensurge Analytics</a></li>
 			</ul>
 		</nav>
-		
+
 		<div class="side-nav">
 			<h3>My Routes</h3>
 			<ul id="side-nav-items" class="list-group">
@@ -29,7 +33,30 @@
 
 		<div class="main-content">
 			<h2>General</h2>
+
+			<?php
+				$sql = "SELECT * FROM routes";
+
+				$result = mysqli_query($mysqli,$sql);
+
+				while($row = mysqli_fetch_assoc($result)){
+			?>
 			<div class="card">
+				<div class="card-img-container">
+					<img class="card-img" src="images/sample1.jpg">
+				</div>
+				<div class="card-text-container">
+					<p class="card-title"><?php echo $row['name']; ?></p>
+					<div class="divider"></div>
+					<p class="card-sched"><?php echo $row['details']; ?></p>
+					<a class="card-link" href="card-details.php?route_id=<?php echo $row['route_id']; ?>">See Details</a>
+				</div>
+			</div>
+			<?php
+				}
+			?>
+
+			<!-- <div class="card">
 				<div class="card-img-container">
 					<img class="card-img" src="images/landingbg.jpg">
 				</div>
@@ -40,6 +67,7 @@
 					<a class="card-link" href="card-details.php">See Details</a>
 				</div>
 			</div>
+
 
 			<div class="card">
 				<div class="card-img-container">
@@ -63,7 +91,7 @@
 					<p class="card-sched">Place schedule details here</p>
 					<a class="card-link" href="card-details.php">See Details</a>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="card">
 				<div class="card-img-container">
