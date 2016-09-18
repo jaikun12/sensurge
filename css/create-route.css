@@ -9,3 +9,38 @@ html,body{
 #map{
 	width:70vw;
 }
+
+.create-form{
+	width:400px;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
+.create-form textarea{
+	width:400px;
+}
+
+.button-1{
+    text-decoration:none;
+    background:none;
+    width:200px;
+    color:#4D4D4D;
+    font-weight:600;
+    font-size:3vh;
+    padding-right:50px;
+    padding-left:50px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:solid white 1px;
+    border-radius:5px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+}
+
+.button-1:hover{
+    background:white;
+    color:rgba(39,113,163,0.7);
+    border:solid rgba(39,113,163,0.7) 1px;
+}

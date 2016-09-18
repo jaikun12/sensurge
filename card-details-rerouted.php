@@ -80,7 +80,7 @@
 			<img class="brand" src="images/sample1.jpg">
 			<ul id="nav-menu" class="list-inline">
 				<li><a href="dashboard.php">Home</a></li>
-				<li><a href="live-routes.php">Live Routes</a></li>
+				<li><a href="">Live Routes</a></li>
 				<li><a href="sensurge-analytics.php">Sensurge Analytics</a></li>
 			</ul>
 		</nav>
@@ -91,7 +91,6 @@
       <center>
       <div id="map"></div>
       </center>
-			<input type="text" name="name" id="nanay" value="">
 
 		</div>
 		<script src="js/jquery-2.2.0.min.js"></script>
@@ -126,7 +125,6 @@
 							'stopover': false
 						}
 					],
-
           travelMode: travel_mode
         }, function(response, status) {
           if (status === 'OK') {
