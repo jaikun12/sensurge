@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<nav>
-			<img class="brand" src="images/sample1.jpg">
+			<img class="brand" src="images/sensurge-logo.png">
 			<ul id="nav-menu" class="list-inline">
 				<li><a href="#">Home</a></li>
 				<li><a href="live-routes.php">Live Routes</a></li>

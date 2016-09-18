@@ -32,7 +32,7 @@
 			<center><h2>Live Routes</h2></center>
 			<div class="long-card-centered">
         <div class="card-img-container">
-          <img class="card-img" src="images/sample1.jpg">
+          <img class="card-img" src="images/sensurge-logo.png">
         </div>
         <div class="card-text-container">
           <p class="card-title">Trinoma Delivery Route</p>
