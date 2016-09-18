@@ -91,7 +91,7 @@
       <center>
       <div id="map"></div>
       </center>
-			<input type="text" name="name" id="nanay" value="">
+			
 
 		</div>
 		<script src="js/jquery-2.2.0.min.js"></script>
@@ -120,12 +120,12 @@
         directionsService.route({
           origin: {'placeId': origin_place_id},
           destination: {'placeId': destination_place_id},
-					waypoints: [
-						{
-							'location': '14.664547, 121.021186',
-							'stopover': false
-						}
-					],
+					// waypoints: [
+					// 	{
+					// 		'location': '14.664547, 121.021186',
+					// 		'stopover': false
+					// 	}
+					// ],
 
           travelMode: travel_mode
         }, function(response, status) {
