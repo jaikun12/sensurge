@@ -91,6 +91,7 @@
       <center>
       <div id="map"></div>
       </center>
+			<input type="text" name="name" id="nanay" value="">
 
 		</div>
 		<script src="js/jquery-2.2.0.min.js"></script>
@@ -122,7 +123,7 @@
 					waypoints: [
 						{
 							'location': '14.664547, 121.021186',
-							'stopover': true
+							'stopover': false
 						}
 					],
           travelMode: travel_mode
