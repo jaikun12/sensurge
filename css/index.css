@@ -128,7 +128,7 @@ video#bgvid {
     text-align:left;
     margin-top:3em;
     line-height:2;
-    overflow-y:scroll;
+    /*overflow-y:scroll;*/
 }
 
 #intro-div .col-xs-4{
