@@ -1,6 +1,6 @@
 <?php
 
-	$DB_NAME = 'sensurge';
+	$DB_NAME = 'sensurge_db';
 
 	/* Database Host */
 	$DB_HOST = 'localhost';
